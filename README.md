@@ -4,7 +4,7 @@
 This repo contains dotfiles for any of the customized tooling on my linux installations.
 
 ## Usage
-Each subfoler in this project contains either an install script or is `stow`-able. These configs assume a XDG home folder setup (e.g. `~/Pictures` being a valid directory).
+Each subfoler in this project either contains an install script or is `stow`-able. These configs assume a XDG home folder setup (e.g. `~/Pictures` being a valid directory).
 
 ### Install Scripts
 These folders will have an `install.sh` script for you to run.
