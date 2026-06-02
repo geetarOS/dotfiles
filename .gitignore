@@ -1,0 +1,12 @@
+# Never commit secrets
+*.key
+*.pem
+*_rsa
+*_ed25519
+*.token
+.env
+
+# Noctalia generated/volatile state — keep settings, drop runtime noise
+# (review your own dir; these are common candidates)
+noctalia/.config/noctalia/*.log
+noctalia/.config/noctalia/cache/
