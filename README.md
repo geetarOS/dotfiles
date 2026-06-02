@@ -23,3 +23,5 @@ Any folder without a `.config` inside will have an `install.sh` script for you t
 cd system
 ./install.sh
 ```
+
+Wallpaper Credits: ![magnific.com](magnific.com)
