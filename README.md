@@ -28,6 +28,6 @@ stow niri
 This is a list of OS + tools with their corresponding subfolders for customization.
 
 * CachyOS - Niri + Noctalia
-  * assets, system, alacrity, niri, noctalia
+  * assets, system, zsh, alacrity, niri, noctalia
 
 Wallpaper Credits: ![magnific.com](magnific.com)
