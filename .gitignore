@@ -10,6 +10,8 @@
 .env
 .env.*
 **/NetworkManager/system-connections/
+.zsh_secrets
+*.secrets
 
 # Noise
 *.log
