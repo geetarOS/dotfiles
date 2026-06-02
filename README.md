@@ -4,7 +4,7 @@
 This repo contains dotfiles for any of the customized tooling on my linux installations.
 
 ## Usage
-Each subfoler in this project contains either a stowable `.config` folder or an install script. These configs assume a XDG home folder setup (e.g. ~/Pictures being a valid directory).
+Each subfoler in this project contains either a stowable `.config` folder or an install script. These configs assume a XDG home folder setup (e.g. `~/Pictures` being a valid directory).
 
 ### Stowable .configs
 Any folder with a `.config` inside is able to be put in place simply by using the `stow` command.
