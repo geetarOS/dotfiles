@@ -367,7 +367,7 @@
         "animationDisabled": false,
         "animationSpeed": 1,
         "autoStartAuth": false,
-        "avatarImage": "/home/connerc/.face.icon",
+        "avatarImage": "~/.face.icon",
         "boxRadiusRatio": 1,
         "clockFormat": "hh\\nmm",
         "clockStyle": "custom",
@@ -667,7 +667,7 @@
     },
     "wallpaper": {
         "automationEnabled": false,
-        "directory": "/home/connerc/Pictures/Wallpapers",
+        "directory": "~/Pictures/Wallpapers",
         "enableMultiMonitorDirectories": false,
         "enabled": true,
         "favorites": [
