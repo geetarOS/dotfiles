@@ -1,33 +1,33 @@
 # Colors (Noctalia)
 
 [colors.bright]
-black = '#3c3c3c'
-blue = '#a7a7a7'
-cyan = '#cccccc'
-green = '#cccccc'
-magenta = '#dddddd'
-red = '#dddddd'
+black = '#191919'
+blue = '#ffb219'
+cyan = '#f2f2f2'
+green = '#18f24f'
+magenta = '#cdcdcd'
+red = '#ffffff'
 white = '#ffffff'
-yellow = '#aaaaaa'
+yellow = '#f2e018'
 
 [colors.cursor]
-cursor = '#aaaaaa'
+cursor = '#e69900'
 text = '#111111'
 
 [colors.normal]
-black = '#191919'
-blue = '#a7a7a7'
+black = '#111111'
+blue = '#e69900'
 cyan = '#cccccc'
-green = '#cccccc'
-magenta = '#dddddd'
+green = '#00cc33'
+magenta = '#a7a7a7'
 red = '#dddddd'
-white = '#828282'
-yellow = '#aaaaaa'
+white = '#e69900'
+yellow = '#ccbb00'
 
 [colors.primary]
 background = '#111111'
-foreground = '#828282'
+foreground = '#e69900'
 
 [colors.selection]
-background = '#828282'
+background = '#e69900'
 text = '#111111'
