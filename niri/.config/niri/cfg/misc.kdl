@@ -36,3 +36,9 @@
 	passes 1
 	offset 2
     }
+
+    gestures {
+	hot-corners {
+	    off
+	}
+    }
