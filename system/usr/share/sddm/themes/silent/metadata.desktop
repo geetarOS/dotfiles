@@ -25,4 +25,5 @@ QtVersion=6
 # ConfigFile=configs/catppuccin-macchiato.conf
 # ConfigFile=configs/catppuccin-mocha.conf
 # ConfigFile=configs/nord.conf
-ConfigFile=configs/custom.conf
+# ConfigFile=configs/custom.conf
+ConfigFile=configs/custom2.conf
