@@ -12,7 +12,7 @@ sudo cp "$REPO/etc/sddm.conf" /etc/sddm.conf
 # silent theme customizations (theme itself from sddm-silent-theme AUR pkg)
 sudo cp "$REPO/usr/share/sddm/themes/silent/configs/custom.conf" "$THEME/configs/"
 sudo cp "$REPO/usr/share/sddm/themes/silent/metadata.desktop" "$THEME/"
-sudo cp "$REPO/usr/share/sddm/themes/silent/backgrounds/marble.jpg" "$THEME/backgrounds/"
+sudo cp "$REPO/usr/share/sddm/themes/silent/backgrounds/tokyonight.png" "$THEME/backgrounds/"
 sudo install -Dm644 "$REPO/assets/face.icon" "/usr/share/sddm/faces/${TARGET_USER}.face.icon"
 
 echo "SDDM config + silent customizations deployed."
