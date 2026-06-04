@@ -7,7 +7,12 @@ output "eDP-1" {
     position x=1792 y=1440
 }
 
+// DP-6 and DP-7 are the same monitor usually at work
 output "DP-7" {
+    position x=0 y=0
+}
+
+output "DP-6" {
     position x=0 y=0
 }
 
