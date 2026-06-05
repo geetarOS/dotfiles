@@ -8,7 +8,9 @@ fi
 source /usr/share/cachyos-zsh-config/cachyos-config.zsh
 
 # Custom and Overrides
-ZSH_AUTOSUGGEST_STRATEGY=(completion)
+ZSH_AUTOSUGGEST_MANUAL_REBIND=1
+unset ZSH_AUTOSUGGEST_STRATEGY
+typeset -g ZSH_AUTOSUGGEST_DISABLE=1
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
