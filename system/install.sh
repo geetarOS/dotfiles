@@ -17,4 +17,6 @@ sudo cp "$REPO/usr/share/sddm/themes/silent/backgrounds/marble.jpg" "$THEME/back
 sudo cp "$REPO/usr/share/sddm/themes/silent/backgrounds/tokyonight.png" "$THEME/backgrounds/"
 sudo install -Dm644 "$REPO/../assets/face.icon" "/usr/share/sddm/faces/${TARGET_USER}.face.icon"
 
+gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+
 echo "SDDM config + silent customizations deployed."

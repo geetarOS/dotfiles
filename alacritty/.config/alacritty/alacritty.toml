@@ -52,19 +52,19 @@ foreground = "0xD8DEE9"
 size = 12
 
 [font.normal]
-family = "monospace"
+family = "JetBrainsMono Nerd Font Mono"
 style = "Regular"
 
 [font.bold]
-family = "monospace"
+family = "JetBrainsMono Nerd Font Mono"
 style = "Bold"
 
 [font.italic]
-family = "monospace"
+family = "JetBrainsMono Nerd Font Mono"
 style = "Italic"
 
 [font.bold_italic]
-family = "monospace"
+family = "JetBrainsMono Nerd Font Mono"
 style = "Bold Italic"
 
 [selection]

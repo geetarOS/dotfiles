@@ -147,7 +147,7 @@
                     "hideMode": "hidden",
                     "id": "ActiveWindow",
                     "maxWidth": 300,
-                    "scrollingMode": "always",
+                    "scrollingMode": "hover",
                     "showIcon": true,
                     "showText": true,
                     "textColor": "none",
@@ -515,7 +515,7 @@
         "backgroundOpacity": 1,
         "clearDismissed": true,
         "criticalUrgencyDuration": 15,
-        "density": "compact",
+        "density": "default",
         "enableBatteryToast": true,
         "enableKeyboardLayoutToast": true,
         "enableMarkdown": false,
@@ -661,15 +661,19 @@
             {
                 "enabled": true,
                 "id": "alacritty"
+            },
+            {
+                "enabled": true,
+                "id": "btop"
             }
         ],
         "enableUserTheming": false
     },
     "ui": {
         "boxBorderEnabled": false,
-        "fontDefault": "Adwaita Mono",
+        "fontDefault": "JetBrainsMono Nerd Font",
         "fontDefaultScale": 1,
-        "fontFixed": "monospace",
+        "fontFixed": "JetBrainsMono Nerd Font Mono",
         "fontFixedScale": 1,
         "panelBackgroundOpacity": 0.93,
         "panelsAttachedToBar": true,
