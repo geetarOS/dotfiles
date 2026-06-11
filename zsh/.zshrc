@@ -22,3 +22,5 @@ export NVM_DIR="$HOME/.nvm"
 
 # Autocomplete Color
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=244'
+
+export EDITOR=nvim

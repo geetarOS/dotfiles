@@ -1,2 +1,3 @@
 background-opacity = 0.75
 theme = noctalia
+confirm-close-surface = false

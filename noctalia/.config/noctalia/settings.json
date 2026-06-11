@@ -669,6 +669,10 @@
             {
                 "enabled": true,
                 "id": "ghostty"
+            },
+            {
+                "enabled": true,
+                "id": "yazi"
             }
         ],
         "enableUserTheming": false
