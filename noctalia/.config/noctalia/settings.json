@@ -143,7 +143,7 @@
                     "usePadding": false
                 },
                 {
-                    "colorizeIcons": true,
+                    "colorizeIcons": false,
                     "hideMode": "hidden",
                     "id": "ActiveWindow",
                     "maxWidth": 300,
@@ -665,6 +665,10 @@
             {
                 "enabled": true,
                 "id": "btop"
+            },
+            {
+                "enabled": true,
+                "id": "ghostty"
             }
         ],
         "enableUserTheming": false
