@@ -388,7 +388,7 @@
         "autoStartAuth": false,
         "avatarImage": "~/.face.icon",
         "boxRadiusRatio": 1,
-        "clockFormat": "HH:mm AP",
+        "clockFormat": "hh:mm AP",
         "clockStyle": "custom",
         "compactLockScreen": false,
         "dimmerOpacity": 0.2,
