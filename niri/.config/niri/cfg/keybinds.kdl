@@ -8,6 +8,9 @@ binds {
 
     Mod+Shift+ESCAPE                     { show-hotkey-overlay; }
 
+    // ─── Multi-launch ───
+    Mod+Shift+W				hotkey-overlay-title="Start Work Apps" { spawn-sh "/home/connerc/.config/niri/scripts/launch-workspace.sh"; }
+
     // ─── Applications ───
     Mod+Return                          hotkey-overlay-title="Open Terminal: Ghostty" { spawn-sh "ghostty +new-window"; }
     Mod+A     		                hotkey-overlay-title="Open App Launcher: noctalia launcher" { spawn-sh "qs -c noctalia-shell ipc call launcher toggle"; }

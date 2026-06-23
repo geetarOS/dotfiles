@@ -16,11 +16,23 @@
        open-focused false
     }
 
+    window-rule {
+        match app-id="oneko"
+        match title="oneko"
+        open-floating true
+        focus-ring {
+            off
+        }
+        border {
+            off
+        }
+    }
+
     layer-rule {
         match namespace="^noctalia-wallpaper*"
         place-within-backdrop true
     }
 
     switch-events {
-	lid-close { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "sessionMenu" "lockAndSuspend"; }
+	lid-close { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "lockScreen" "lock"; }
     }

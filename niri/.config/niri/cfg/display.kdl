@@ -11,15 +11,26 @@ output "eDP-1" {
 // DP-6 and DP-7 are the same monitor usually at work
 output "DP-7" {
     mode "2560x1440@143.967"
-    position x=0 y=0
+    position x=200 y=0
 }
 
 output "DP-6" {
     mode "2560x1440@143.967"
-    position x=0 y=0
+    position x=200 y=0
 }
 
-output "HDMI-A-1" {
+output "DP-3" {
+   mode "2560x1440@143.967"
+    position x=200 y=0
+}
+
+// DP-4 and DP-5 are the same monitor at work
+output "DP-4" {
     mode "2560x1440@143.967"
-    position x=2560 y=0
+    position x=2760 y=0
+}
+
+output "DP-5" {
+    mode "2560x1440@143.967"
+    position x=2760 y=0
 }

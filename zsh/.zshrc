@@ -24,3 +24,9 @@ export NVM_DIR="$HOME/.nvm"
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=244'
 
 export EDITOR=nvim
+
+gacp() {
+  git add .
+  git commit -m "$1"
+  git push
+}
