@@ -15,6 +15,7 @@ sudo cp "$REPO/usr/share/sddm/themes/silent/configs/custom2.conf" "$THEME/config
 sudo cp "$REPO/usr/share/sddm/themes/silent/metadata.desktop" "$THEME/"
 sudo cp "$REPO/usr/share/sddm/themes/silent/backgrounds/marble.jpg" "$THEME/backgrounds/"
 sudo cp "$REPO/usr/share/sddm/themes/silent/backgrounds/tokyonight.png" "$THEME/backgrounds/"
+sudo cp "$REPO/usr/share/sddm/themes/silent/backgrounds/d2.jpg" "$THEME/backgrounds/"
 sudo install -Dm644 "$REPO/../assets/face.icon" "/usr/share/sddm/faces/${TARGET_USER}.face.icon"
 
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
