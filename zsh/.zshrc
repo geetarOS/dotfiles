@@ -24,6 +24,7 @@ export NVM_DIR="$HOME/.nvm"
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=244'
 
 export EDITOR=nvim
+export PATH="$HOME/go/bin:$PATH"
 
 gacp() {
   git add .
