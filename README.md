@@ -1,4 +1,4 @@
-![wallpaper](system/usr/share/sddm/themes/silent/backgrounds/tokyonight.png)
+![wallpaper](system/usr/share/sddm/themes/silent/backgrounds/d2.jpg)
 
 # Conner's DOTFILES
 This repo contains dotfiles for any of the customized tooling on my linux installations.
