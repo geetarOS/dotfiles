@@ -21,13 +21,18 @@ Any folder without an install script is able to be put in place simply by using 
 
 ```bash
 stow noctalia
-stow niri
+stow hyprland
 ```
+
+## Best Solo Configs
+* `nvim` - nvim with good LSP, treesitter, Telescope, and Harpoon setups (includes Vue 2 and Tailwind stuff too)
 
 ## Common Combos
 This is a list of OS + tools with their corresponding subfolders for customization.
 
 * CachyOS - Niri + Noctalia
-  * assets, system, zsh, alacrity, niri, noctalia
+  * assets, system, zsh, ghostty, niri, noctalia
+* CachyOS - Hyprland + Noctalia
+  * assets, system, zsh, ghostty, hyprland, noctalia
 
 Wallpaper Credits: ![magnific.com](magnific.com)
