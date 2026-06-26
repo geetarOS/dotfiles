@@ -28,14 +28,14 @@ hl.monitor({
 })
 
 hl.monitor({
-    output   = "DP-3",
+    output   = "DP-4",
     mode     = "2560x1440@143.967",
     position = "200x0",
     scale    = "1",
 })
 
 hl.monitor({
-    output   = "DP-4",
+    output   = "DP-3",
     mode     = "2560x1440@143.967",
     position = "2760x0",
     scale    = "1",
@@ -103,9 +103,9 @@ hl.env("HYPRCURSOR_SIZE", "24")
 hl.config({
     general = {
         -- gaps_in  = 5,
-        gaps_in = 3,
+        gaps_in = 0,
 	-- gaps_out = 20,
-	gaps_out = 6,
+	gaps_out = 0,
 
         border_size = 2,
 
@@ -284,7 +284,6 @@ hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + A", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
-hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))    -- dwindle only
 hl.bind(mainMod .. " + SHIFT + Q", hl.dsp.exec_cmd("qs -c noctalia-shell ipc call sessionMenu toggle"))
 hl.bind(mainMod .. " + S", hl.dsp.exec_cmd("qs -c noctalia-shell ipc call settings toggle"))
 hl.bind(mainMod .. " + C", hl.dsp.exec_cmd("qs -c noctalia-shell ipc call controlCenter toggle"))
@@ -318,6 +317,16 @@ hl.bind(mainMod .. " + mouse_up",   hl.dsp.focus({ workspace = "e-1" }))
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen())
 hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(),   { mouse = true })
 hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
+hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))    -- dwindle only
+hl.bind("SUPER+SHIFT+left",  hl.dsp.window.swap({ direction = "l" }))
+hl.bind("SUPER+SHIFT+right", hl.dsp.window.swap({ direction = "r" }))
+hl.bind("SUPER+SHIFT+up",    hl.dsp.window.swap({ direction = "u" }))
+hl.bind("SUPER+SHIFT+down",  hl.dsp.window.swap({ direction = "d" }))
+
+hl.bind("SUPER+CTRL+right", hl.dsp.window.resize({ x = 50, y = 0, relative = true }), { repeating = true })
+hl.bind("SUPER+CTRL+left",  hl.dsp.window.resize({ x = -50, y = 0, relative = true }), { repeating = true })
+hl.bind("SUPER+CTRL+up",    hl.dsp.window.resize({ x = 0, y = -50, relative = true }), { repeating = true })
+hl.bind("SUPER+CTRL+down",  hl.dsp.window.resize({ x = 0, y = 50, relative = true }), { repeating = true })
 
 -- Laptop multimedia keys for volume and LCD brightness
 hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("qs -c noctalia-shell ipc call volume increase"), { locked = true, repeating = true })

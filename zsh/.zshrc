@@ -31,3 +31,7 @@ gacp() {
   git commit -m "$1"
   git push
 }
+
+owork() {
+  cd ~/Work/"$1" && nvim .
+}
