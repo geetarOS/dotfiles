@@ -26,12 +26,16 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=244'
 export EDITOR=nvim
 export PATH="$HOME/go/bin:$PATH"
 
-gacp() {
+gitp() {
   git add .
   git commit -m "$1"
   git push
 }
 
-owork() {
-  cd ~/Work/"$1" && nvim .
+nvim-sa() {
+  cd ~/Work/sa-"$1" && nvim .
+}
+
+claude-sa() {
+  cd ~/Work/sa-"$1" && claude
 }

@@ -28,14 +28,14 @@ hl.monitor({
 })
 
 hl.monitor({
-    output   = "DP-4",
+    output   = "desc:Dell Inc. DELL G2724D FBC06Y3",
     mode     = "2560x1440@143.967",
     position = "200x0",
     scale    = "1",
 })
 
 hl.monitor({
-    output   = "DP-3",
+    output   = "desc:Dell Inc. DELL G2724D 18Z3Z44",
     mode     = "2560x1440@143.967",
     position = "2760x0",
     scale    = "1",
