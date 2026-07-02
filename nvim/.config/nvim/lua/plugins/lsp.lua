@@ -22,6 +22,14 @@ return {
         capabilities = require("cmp_nvim_lsp").default_capabilities(),
       })
 
+      -- nvim-lspconfig now ships its own lsp/volar.lua (filetypes = { "vue" })
+      -- that loads AFTER ours on the runtimepath and clobbers our filetypes,
+      -- so Volar (takeover mode) stopped attaching to .ts/.js. Re-assert here;
+      -- an explicit vim.lsp.config() call wins over the runtimepath merge.
+      vim.lsp.config("volar", {
+        filetypes = { "vue", "javascript", "typescript", "json" },
+      })
+
       -- Turn servers on. Settings for each are merged from ~/.config/nvim/lsp/<name>.lua
       vim.lsp.enable({ "gopls", "volar", "tailwindcss" })
     end,
