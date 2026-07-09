@@ -39,3 +39,7 @@ nvim-sa() {
 claude-sa() {
   cd ~/Work/sa-"$1" && claude
 }
+
+cd-sa() {
+  cd ~/Work/sa-"$1"
+}

@@ -197,7 +197,11 @@ hl.animation({ leaf = "zoomFactor",    enabled = true,  speed = 7,    bezier = "
 --     match = { float = false, workspace = "f[1]" },
 --     border_size = 0,
 --     rounding    = 0,
--- })
+-- })i
+
+hl.workspace_rule({ workspace = "1", monitor = "eDP-1", default = true })
+hl.workspace_rule({ workspace = "2", monitor = "desc: Dell Inc. DELL G2724D FBC06Y3", default = true })
+hl.workspace_rule({ workspace = "3", monitor = "desc: Dell Inc. DELL G2724D 18Z3Z44", default = true })
 
 -- See https://wiki.hypr.land/Configuring/Layouts/Dwindle-Layout/ for more
 hl.config({
