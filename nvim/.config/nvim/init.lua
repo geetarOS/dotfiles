@@ -6,6 +6,16 @@ vim.opt.shiftwidth = 4
 vim.opt.tabstop = 4
 vim.cmd("colorscheme retrobox")
 
+-- Diagnostics: show messages inline. Nvim's defaults only underline + put a sign in
+-- the gutter (virtual_text is off), which makes real LSP errors easy to miss.
+vim.diagnostic.config({
+  virtual_text = { spacing = 2, source = "if_many" },
+  severity_sort = true,
+  underline = true,
+  signs = true,
+  update_in_insert = false,
+})
+
 -- Auto commands
 vim.api.nvim_create_autocmd("LspAttach", {
   callback = function(args)

@@ -11,7 +11,7 @@ return {
       typescript = { "eslint_d" },
     },
     format_on_save = {
-      timeout_ms = 3000,
+      timeout_ms = 5000, -- eslint_d cold-start on large projects can exceed 3s
       lsp_format = "never",
     },
   },
