@@ -161,7 +161,8 @@ hl.curve("almostLinear",   { type = "bezier", points = { {0.5, 0.5},   {0.75, 1}
 hl.curve("quick",          { type = "bezier", points = { {0.15, 0},    {0.1, 1}     } })
 
 -- Default springs
-hl.curve("easy",           { type = "spring", mass = 1, stiffness = 71.2633, dampening = 15.8273644 })
+-- OLD CURVE: hl.curve("easy",           { type = "spring", mass = 1, stiffness = 71.2633, dampening = 15.8273644 })
+hl.curve("easy",           { type = "spring", mass = 1, stiffness = 878.5, dampening = 59.29 })
 
 hl.animation({ leaf = "global",        enabled = true,  speed = 10,   bezier = "default" })
 hl.animation({ leaf = "border",        enabled = true,  speed = 5.39, bezier = "easeOutQuint" })
@@ -346,6 +347,11 @@ hl.bind("XF86AudioPrev",  hl.dsp.exec_cmd("qs -c noctalia-shell ipc call media p
 
 -- Event binds
 hl.bind("switch:on:Lid Switch", hl.dsp.exec_cmd("qs -c noctalia-shell ipc call lockScreen lock"), { locked = true })
+
+-- Screenshot binds
+hl.bind("SUPER+Print", hl.dsp.exec_cmd("grimblast copysave screen"), { locked = true })
+hl.bind("SUPER+CTRL+Print", hl.dsp.exec_cmd("grimblast copysave active"), { locked = true })
+hl.bind("SUPER+CTRL+SHIFT+Print", hl.dsp.exec_cmd("grimblast copysave area"), { locked = true })
 
 --------------------------------
 ---- WINDOWS AND WORKSPACES ----
