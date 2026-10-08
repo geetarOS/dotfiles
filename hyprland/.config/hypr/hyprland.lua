@@ -49,7 +49,7 @@ hl.monitor({
 -- Set programs that you use
 local terminal    = "ghostty"
 local fileManager = "nautilus"
-local menu        = "qs -c noctalia-shell ipc call launcher toggle"
+local menu        = "noctalia msg panel-toggle launcher"
 
 
 -------------------
@@ -62,7 +62,7 @@ local menu        = "qs -c noctalia-shell ipc call launcher toggle"
 -- Or execute your favorite apps at launch like this:
 --
 hl.on("hyprland.start", function () 
-  hl.exec_cmd("qs -c noctalia-shell")
+  hl.exec_cmd("noctalia")
 end)
 
 
@@ -289,10 +289,10 @@ hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + A", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
-hl.bind(mainMod .. " + SHIFT + Q", hl.dsp.exec_cmd("qs -c noctalia-shell ipc call sessionMenu toggle"))
-hl.bind(mainMod .. " + S", hl.dsp.exec_cmd("qs -c noctalia-shell ipc call settings toggle"))
-hl.bind(mainMod .. " + C", hl.dsp.exec_cmd("qs -c noctalia-shell ipc call controlCenter toggle"))
-hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("qs -c noctalia-shell ipc call lockScreen lock"))
+hl.bind(mainMod .. " + SHIFT + Q", hl.dsp.exec_cmd("noctalia msg panel-toggle session"))
+hl.bind(mainMod .. " + S", hl.dsp.exec_cmd("noctalia msg settings-toggle"))
+hl.bind(mainMod .. " + C", hl.dsp.exec_cmd("noctalia msg panel-toggle control-center"))
+hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("noctalia msg session lock"))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd("firefox"))
 
 
@@ -334,19 +334,19 @@ hl.bind("SUPER+CTRL+up",    hl.dsp.window.resize({ x = 0, y = -50, relative = tr
 hl.bind("SUPER+CTRL+down",  hl.dsp.window.resize({ x = 0, y = 50, relative = true }), { repeating = true })
 
 -- Laptop multimedia keys for volume and LCD brightness
-hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("qs -c noctalia-shell ipc call volume increase"), { locked = true, repeating = true })
-hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("qs -c noctalia-shell ipc call volume decrease"),      { locked = true, repeating = true })
-hl.bind("XF86AudioMute",        hl.dsp.exec_cmd("qs -c noctalia-shell ipc muteOutput"),     { locked = true, repeating = true })
-hl.bind("XF86AudioMicMute",     hl.dsp.exec_cmd("qs -c noctalia-shell ipc muteInput"),   { locked = true, repeating = true })
-hl.bind("XF86MonBrightnessUp",  hl.dsp.exec_cmd("qs -c noctalia-shell ipc call brightness increase"),                  { locked = true, repeating = true })
-hl.bind("XF86MonBrightnessDown",hl.dsp.exec_cmd("qs -c noctalia-shell ipc call brightness decrease"),                  { locked = true, repeating = true })
-hl.bind("XF86AudioNext",  hl.dsp.exec_cmd("qs -c noctalia-shell ipc call media next"),       { locked = true })
-hl.bind("XF86AudioPause", hl.dsp.exec_cmd("qs -c noctalia-shell ipc call media playPause"), { locked = true })
-hl.bind("XF86AudioPlay",  hl.dsp.exec_cmd("qs -c noctalia-shell ipc call media playPause"), { locked = true })
-hl.bind("XF86AudioPrev",  hl.dsp.exec_cmd("qs -c noctalia-shell ipc call media previous"),   { locked = true })
+hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("noctalia msg volume-up"), { locked = true, repeating = true })
+hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("noctalia msg volume-down"),      { locked = true, repeating = true })
+hl.bind("XF86AudioMute",        hl.dsp.exec_cmd("noctalia msg volume-mute"),     { locked = true, repeating = true })
+hl.bind("XF86AudioMicMute",     hl.dsp.exec_cmd("noctalia msg mic-mute"),   { locked = true, repeating = true })
+hl.bind("XF86MonBrightnessUp",  hl.dsp.exec_cmd("noctalia msg brightness-up"),                  { locked = true, repeating = true })
+hl.bind("XF86MonBrightnessDown",hl.dsp.exec_cmd("noctalia msg brightness-down"),                  { locked = true, repeating = true })
+hl.bind("XF86AudioNext",  hl.dsp.exec_cmd("noctalia msg media next"),       { locked = true })
+hl.bind("XF86AudioPause", hl.dsp.exec_cmd("noctalia msg play-pause"), { locked = true })
+hl.bind("XF86AudioPlay",  hl.dsp.exec_cmd("noctalia msg media play-pause"), { locked = true })
+hl.bind("XF86AudioPrev",  hl.dsp.exec_cmd("noctalia msg media previous"),   { locked = true })
 
 -- Event binds
-hl.bind("switch:on:Lid Switch", hl.dsp.exec_cmd("qs -c noctalia-shell ipc call lockScreen lock"), { locked = true })
+hl.bind("switch:on:Lid Switch", hl.dsp.exec_cmd("noctalia msg session lock"), { locked = true })
 
 -- Screenshot binds
 hl.bind("SUPER+Print", hl.dsp.exec_cmd("grimblast copysave screen"), { locked = true })
