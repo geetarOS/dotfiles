@@ -22,6 +22,11 @@ margin_ends = 0
 radius = 0
 shadow = false
 start = [ "clock", "date" ]
+widget_spacing = 16
+
+[lockscreen]
+transition = [ "fade" ]
+transition_duration = 500
 
 [lockscreen_widgets]
 enabled = false
