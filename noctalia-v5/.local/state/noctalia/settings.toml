@@ -1,4 +1,4 @@
-config_version = 14
+config_version = 16
 
 [bar.default]
 center = [ "workspaces" ]
@@ -23,6 +23,9 @@ radius = 0
 shadow = false
 start = [ "clock", "date" ]
 widget_spacing = 16
+
+[location]
+address = "Greenville, South Carolina, United States of America"
 
 [lockscreen]
 transition = [ "fade" ]
@@ -50,7 +53,7 @@ widget_order = [ "lockscreen-login-box@DP-4", "lockscreen-login-box@DP-3", "lock
     type = "login_box"
 
         [lockscreen_widgets.widget."lockscreen-login-box@DP-3".settings]
-        background_color = "surface_variant"
+        background_color = "surface_container"
         background_opacity = 0.88
         background_radius = 12.0
         center_password_text = false
@@ -77,7 +80,7 @@ widget_order = [ "lockscreen-login-box@DP-4", "lockscreen-login-box@DP-3", "lock
     type = "login_box"
 
         [lockscreen_widgets.widget."lockscreen-login-box@DP-4".settings]
-        background_color = "surface_variant"
+        background_color = "surface_container"
         background_opacity = 0.88
         background_radius = 12.0
         center_password_text = false
@@ -104,7 +107,7 @@ widget_order = [ "lockscreen-login-box@DP-4", "lockscreen-login-box@DP-3", "lock
     type = "login_box"
 
         [lockscreen_widgets.widget."lockscreen-login-box@eDP-1".settings]
-        background_color = "surface_variant"
+        background_color = "surface_container"
         background_opacity = 0.88
         background_radius = 12.0
         center_password_text = false
@@ -165,18 +168,36 @@ font_family = "JetBrainsMono Nerd Font Mono"
     alpha = 0.4999999888241291
 
 [theme]
+builtin = "Nord"
+community_palette = "Oasis Abyss"
+mode = "dark"
 shell_mode = "dark"
-source = "wallpaper"
-wallpaper_scheme = "faithful"
+source = "community"
+wallpaper_scheme = "muted"
+
+    [theme.templates]
+    builtin_ids = [ "btop", "ghostty", "hyprland" ]
 
 [wallpaper]
 directory = "/home/connerc/Pictures/Wallpapers"
 
     [wallpaper.default]
-    path = "/home/connerc/Pictures/Wallpapers/d2.jpg"
+    path = "/home/connerc/Pictures/Wallpapers/mountain.jpg"
 
     [wallpaper.last]
-    path = "/home/connerc/Pictures/Wallpapers/d2.jpg"
+    path = "/home/connerc/Pictures/Wallpapers/mountain.jpg"
+
+    [wallpaper.monitors.DP-3]
+    path = "/home/connerc/Pictures/Wallpapers/mountain.jpg"
+
+    [wallpaper.monitors.DP-4]
+    path = "/home/connerc/Pictures/Wallpapers/mountain.jpg"
+
+    [wallpaper.monitors.eDP-1]
+    path = "/home/connerc/Pictures/Wallpapers/mountain.jpg"
+
+[weather]
+unit = "imperial"
 
 [widget.clock]
 format = "{:%-I:%M %p}"
